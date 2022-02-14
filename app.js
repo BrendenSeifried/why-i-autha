@@ -13,10 +13,10 @@ const signInPassword = document.getElementById('sign-in-password');
 
 const user = await getUser();
 
-if(user){
-    location.replace('/other-page')
-    //console.log(user);
-}
+// if(user){
+//     location.replace('/other-page')
+//     //console.log(user);
+// }
 
 signUpForm.addEventListener('submit', async (e) => {
     e.preventDefault();

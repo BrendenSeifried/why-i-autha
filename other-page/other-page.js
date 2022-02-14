@@ -8,9 +8,14 @@
 
 import { checkAuth, logout } from '../fetch-utils.js';
 
+const logOut = document.getElementById('logout');
 
 // export async function checkAuth() {
 //     const user = await getUser();
 
 //     if (!user) location.replace('/'); 
 // }
+
+logOut.addEventListener('click', (e) => {
+    location.replace('../index.html'); 
+});
