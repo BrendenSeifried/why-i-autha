@@ -27,7 +27,11 @@ export async function checkAuth() {
     if (!user) location.replace('../index.html'); 
 }
 
-export async function redirectIfLoggedIn() {}
+export async function redirectIfLoggedIn() {
+    if (await getUser()) {
+        location.replace('./other-page');
+    }
+}
 
 // export async function logout() {
 //         location.replace('../index.html'); 
