@@ -9,7 +9,6 @@
 import { checkAuth, logout } from '../fetch-utils.js';
 
 
-
 // export async function checkAuth() {
 //     const user = await getUser();
 

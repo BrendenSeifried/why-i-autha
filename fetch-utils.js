@@ -14,12 +14,16 @@ export function getUser() {
 
 export async function signupUser(email, password) {
     const test = await client.auth.signUp({ email: email, password: password });
-    console.log(test);
+    //console.log(test);
     return test.user;
 }
 
 
-export async function signInUser(email, password) {}
+export async function signInUser(email, password) {
+    const signUsr = await client.auth.signIn({ email: email, password: password });
+    console.log(signUsr);
+    return signUsr.user;
+}
 
 // export async function checkAuth() {
 //     const user = await getUser();
