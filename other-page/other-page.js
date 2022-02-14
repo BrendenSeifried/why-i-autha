@@ -18,4 +18,5 @@ const logOut = document.getElementById('logout');
 
 logOut.addEventListener('click', (e) => {
     location.replace('../index.html'); 
+    
 });
