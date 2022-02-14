@@ -6,9 +6,15 @@
 //     if (!user) location.replace('/other-page'); 
 // }
 
-//import { checkAuth, logout } from '../fetch-utils.js';
+import { checkAuth, logout } from '../fetch-utils.js';
 
-const logOut = document.getElementById('logout');
+checkAuth();
+
+const logoutBtn = document.getElementById('logout');
+
+logoutBtn.addEventListener('click', () => {
+    logout();
+});
 
 // export async function checkAuth() {
 //     const user = await getUser();
@@ -16,7 +22,3 @@ const logOut = document.getElementById('logout');
 //     if (!user) location.replace('/'); 
 // }
 
-logOut.addEventListener('click', (e) => {
-    location.replace('../index.html'); 
-    
-});

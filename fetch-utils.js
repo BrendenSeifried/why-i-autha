@@ -33,10 +33,11 @@ export async function redirectIfLoggedIn() {
     }
 }
 
-// export async function logout() {
-//         location.replace('../index.html'); 
+export async function logout() {
+    await client.auth.signOut();
+    return (window.location.href = '../index.html');
         
-//     });
-// //}
+}
+
 
 
