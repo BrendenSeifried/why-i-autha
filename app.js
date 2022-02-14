@@ -7,6 +7,7 @@ const signUpPassword = document.getElementById('sign-up-password');
 const signInForm = document.getElementById('sign-in');
 const signInEmail = document.getElementById('sign-in-email');
 const signInPassword = document.getElementById('sign-in-password');
+const logIn = document.getElementById('login');
 // Wire up sign in and sign up forms to supabase
 // Redirect to /other-page on successful auth
 // Redirect to /other-page when page loads if user is authenticated
@@ -25,4 +26,9 @@ signInForm.addEventListener('submit', async (e) => {
     console.log(signInEmail.value, signInPassword.value);
     await signInUser(signInEmail.value, signInPassword.value);
    
+});
+
+logIn.addEventListener('click', (e) => {
+    location.replace('../other-page'); 
+    
 });

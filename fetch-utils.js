@@ -24,7 +24,7 @@ export async function signInUser(email, password) {
 export async function checkAuth() {
     const user = await getUser();
 
-    if (!user) location.replace('/other-page'); 
+    if (!user) location.replace('../index.html'); 
 }
 
 export async function redirectIfLoggedIn() {}
